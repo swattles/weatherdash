@@ -1,7 +1,7 @@
 
 // Define a baseURL and key to as part of the request URL
 
-const baseURL = 'http://api.openweathermap.org/data/2.5/weather';
+const baseURL = 'https://api.openweathermap.org/data/2.5/weather';
 const nextURL = 'https://api.openweathermap.org/data/3.0/onecall'
 const key = 'c0e0bc244d6e2e1a2584fe5f12098d0b';
 
