@@ -34,6 +34,7 @@ var windData;
         //let previousSearch = JSON.parse(localStorage.getItem(key))
         //console.log(previousSearch)
    // }
+//}
     
 //function savetheSearch(results,index) {
 //console.log('you clicked the save button');
