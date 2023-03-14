@@ -59,15 +59,22 @@ async function fetchResults(e) {
         fetch(newUrl)
         .then((response) => response.json())
         .then((response) => {
-            console.log(response)
+             console.log(response)
+            var weekday = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
+            var d = new Date();
             for (i = 0; i <= 5; i++) {
                 // fetch max temp, min temp, and wind speed for 5 days
                 var fiveDayMax = response.daily[i].temp.max;
                 var fiveDayMin = response.daily[i].temp.min;
                 var windSpeed = response.daily[i].wind_speed;
-                var weekday = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
-                var d = new Date();
-                let day = weekday[d.getDay()];
+                var dayoftheweek = d.getDay()+i;
+                // it's 7, go back to the beginning and 7 = 0
+                let day 
+                if (dayoftheweek <= 6) {
+                  day = weekday[dayoftheweek];
+                } else {
+                  day = weekday[dayoftheweek - 7];
+                }
             
                
                 // append new div to existing weather div and make p element that holds information
