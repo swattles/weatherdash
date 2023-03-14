@@ -22,40 +22,6 @@ var conditionData;
 var humidityData;
 var windData;
 
-//let savedSearchArray;
-//const saveButtonElements = document.querySelectorAll('.search');
-// console.log(searchButtonElements);
-
-// upon page load, let's get saved events from the local storage, i.e. localstorage.getItem()
-//function getSavedSearch () {
-  //  let savedSearchArray = document.querySelectorAll('.results')
-    //for (let i = 0; i<savedEventsArray.length; i++) {
-      //  let key = i 
-        //let previousSearch = JSON.parse(localStorage.getItem(key))
-        //console.log(previousSearch)
-   // }
-//}
-    
-//function savetheSearch(results,index) {
-//console.log('you clicked the save button');
-//console.log(e.target);
-//let key = index
-//let value = JSON.stringify(results);
-   
-// document.querySelectorAll("textarea")[i].value
-//window.localStorage.setItem(key, value);     
-//console.log(key, value);
-//}
-
-// get the saved events from local storage, if any exist...
-//getSavedSearch();
-    
-//saveButtonElements.forEach(btn => btn.addEventListener('click',(e)=>{
-//e.preventDefault()
-//let index = e.target.attributes[2].value;
-//let results = document.querySelectorAll('.results')[index].value;
-//savetheSearch(results, index)
-//}))
 
 // Event listeners to control functionality
 searchForm.addEventListener('submit', submitSearch);
